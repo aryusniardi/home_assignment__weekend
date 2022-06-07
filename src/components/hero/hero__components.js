@@ -57,13 +57,13 @@ const CTA__Button = styled.button`
 
 const ImageBackground = styled.div`
   position: absolute;
-  top: 0;
+  top: -67px;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: calc(100vh + 67px);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top center;
   z-index: -1;
   overflow: hidden;
 `

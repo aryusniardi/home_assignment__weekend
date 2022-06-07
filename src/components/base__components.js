@@ -97,7 +97,7 @@ const Section = styled.div`
 `
 
 const Container = styled.div`
-  padding: 0px 15vw;
+  padding: 0px 25vw;
 `
 
 export {

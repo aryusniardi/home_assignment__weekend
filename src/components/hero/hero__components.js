@@ -2,8 +2,7 @@ import styled from 'styled-components'
 
 const Hero = styled.div`
   width: 100vw;
-  height: calc(100vh - 67px);
-  overflow: hidden;
+  height: 100vh;
 
   @media (max-width: 678px) {
     height: fit-content;
@@ -65,7 +64,6 @@ const ImageBackground = styled.div`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-position-y: -2vh;
   z-index: -1;
   overflow: hidden;
 `

@@ -31,7 +31,7 @@ const Text = styled.p`
   font-weight: ${props => 
     props.title ? '900' :
     props.section ? '900' : 
-    props.subtitle ? '600' : "500"
+    props.subtitle ? '600' : "400"
   };
   text-transform: ${props =>
     props.uppercase ? 'uppercase' :
@@ -82,14 +82,27 @@ const Text = styled.p`
 `
 
 const Spacer = styled.div`
+  background-color: ${props => props.black ? 'black' : ''};
   height: ${props => 
     props.sm ? '10px' :
     props.md ? '20px' : 
-    props.lg ? '30px' : '0px'
+    props.lg ? '67px' : '0px'
   };
+`
+
+const Section = styled.div`
+  height: fit-content;
+  width: 100%;
+  background-color: ${props => props.background};
+`
+
+const Container = styled.div`
+  padding: 0px 15vw;
 `
 
 export {
   Text, 
-  Spacer
+  Spacer,
+  Section,
+  Container
 }

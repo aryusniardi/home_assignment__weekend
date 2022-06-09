@@ -4,7 +4,7 @@ const Hero = styled.div`
   width: 100vw;
   height: 100vh;
 
-  @media (max-width: 678px) {
+  @media (max-width: 768px) {
     height: fit-content;
   }
 `
@@ -13,8 +13,8 @@ const Hero__Container = styled.div`
   padding: 84px 15vw;
   z-index: 99;
 
-  @media (max-width: 376px) {
-    padding: 67px 24px;
+  @media (max-width: 576px) {
+    padding: 67px 5vw;
   }
 `
 
@@ -24,6 +24,10 @@ const Hero__Text_Container = styled.div`
   flex-direction: column;
   gap: 20px;
   color: rgba(255, 255, 255, 1);
+
+  @media (max-width: 576px) {
+    width: 90vw;
+  }
 `
 
 const Hero__CTA = styled.div`
@@ -53,6 +57,11 @@ const CTA__Button = styled.button`
   line-height: 18.75px;
   text-transform: capitalize;
   color: rgba(0, 0, 0, 1);
+
+  @media (max-width: 576px) {
+    max-width: 90vw;
+    padding: 20px 84px;
+  }
 `
 
 const ImageBackground = styled.div`
@@ -74,7 +83,7 @@ const ShapeCustom1 = styled.img`
   width: 751.56px;
   right: 40vw;
 
-  @media (max-width: 678px) {
+  @media (max-width: 576px) {
     right: 10vw;
   }
 `
@@ -85,7 +94,7 @@ const ShapeCustom2 = styled.img`
   width: 266px;
   left: 70vw;
 
-  @media (max-width: 678px) {
+  @media (max-width: 576px) {
     display: none;
   }
 `
@@ -96,7 +105,7 @@ const Circle1 = styled.img`
   top: 35vh;
   left: 35vw;
 
-  @media (max-width: 678px) {
+  @media (max-width: 576px) {
     left: -10vw;
   }
 `

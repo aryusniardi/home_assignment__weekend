@@ -30,7 +30,7 @@ const Hero = ({title, subtitle}) => {
       <Hero__Component>
         <Hero__Container>
           <Hero__Text_Container>
-            <Text title color="white" center uppercase>{title ? title : 'Weekend from home'}</Text>
+            <Text title color="white" center uppercase>{title ? title : "Weekend from home"}</Text>
             <Text subtitle color="white" center italic>{subtitle ? subtitle : "Stay active with a little workout"}</Text>
           </Hero__Text_Container>
           <Hero__CTA>

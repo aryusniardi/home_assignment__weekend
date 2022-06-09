@@ -1,12 +1,20 @@
-import logo from './logo.svg';
 import Hero from './components/hero/hero'
 import Section from './components/section/section__component'
 import {Spacer} from './components/base__components'
+import CustomSection1 from './components/custom__section/custom__section_1';
+import Testimonial from './components/testimonial/testimonial';
+import Footer from './components/footer/footer';
+import CustomSection3 from './components/custom__section/custom__section_3';
+import CustomSection2 from './components/custom__section/custom__section_2';
 
 function App() {
   return (
     <div className="App">
       <Hero />
+      <CustomSection1 />
+      <Spacer lg/>
+      <Testimonial />
+      <Spacer lg black/>
       <Section 
         title="POV" 
         background="black" 
@@ -18,20 +26,11 @@ function App() {
         background="black"
         desc="These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best"
       />
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Spacer lg black/>
+      <CustomSection2 />
+      <Spacer lg black/>
+      <CustomSection3 />
+      <Footer />
     </div>
   );
 }

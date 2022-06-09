@@ -8,3 +8,52 @@ body {
   overflow-x: hidden;
   background-color: #EEBECE;
 }
+
+
+
+/* Start Override Swiper Button */
+.swiper-button-next {
+  background-image: url('./assets/svg/shape/arrow__right.svg');
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.swiper-button-next:hover {
+  background-image: url('./assets/svg/shape/arrow__right.svg');
+  background-color: rgba(189, 189, 189, 0.5);
+  }
+
+.swiper-button-next::after {
+  content: '' !important;
+}
+
+.swiper-button-prev {
+  background-image: url('./assets/svg/shape/arrow__left.svg');
+  background-color: rgba(189, 189, 189, 0.5);
+}
+
+.swiper-button-prev:hover {
+  background-color: rgba(189, 189, 189, 1);
+}
+
+.swiper-button-prev::after {
+  content: '' !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 32px !important;
+  width: 32px !important;
+  padding: 7px;
+  border-radius: 100% !important;
+  backdrop-filter: blur(1rem);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transition: .3s;
+}
+/* End Override Swiper Button */
+
